@@ -12,7 +12,7 @@ public class SortMap {
 public void MapData (HashMap<String, Long> int_map) {
 			
         final Map<String, Long>sorted = sortByValue(int_map);{
-        //create or append to file the sorted intensities and shortnames	
+        //create or append to the file the sorted intensities and shortnames	
         try { 
         	 FileWriter myWriter = new FileWriter("C:\\WH\\RegionalIntensity.txt", true);
         	    for (Entry<String, Long> entry : sorted.entrySet())  
@@ -30,7 +30,7 @@ public void MapData (HashMap<String, Long> int_map) {
     } 
     public static Map<String, Long> sortByValue(final Map<String, Long> int_map)
 	{
-    //sort by intensity from highest to lowest
+    //here we sort the map by intensity from highest to lowest
      return int_map.entrySet()
             .stream()
             .sorted((Map.Entry.<String, Long>comparingByValue().reversed()))

@@ -11,8 +11,6 @@ import org.json.simple.parser.ParseException;
 
 public class GetInte {
 
-
-
 public static void main(String[] args)
 {
       
@@ -47,9 +45,6 @@ public static void main(String[] args)
       SortMap sm = new SortMap(); //create a new SortMap object
       //Pass the map to SortMap to sort the map and write to a file
       sm.MapData(int_map);
-      
-           
-         
         }
     }
        catch (FileNotFoundException e) {
